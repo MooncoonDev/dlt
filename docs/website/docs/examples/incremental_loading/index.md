@@ -12,6 +12,8 @@ import Header from '../_examples-header.md';
     your selected destination and restored and used on each new load,
     making it very easy to keep your loaded dataset up to date with the source."
     slug="incremental_loading"
+    install_comment="with duckdb"
+    install_packages='"dlt[duckdb]"'
     run_file="zendesk" />
 
 ## Incremental loading with the Zendesk API

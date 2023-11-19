@@ -12,6 +12,8 @@ import Header from '../_examples-header.md';
     supporting parquet files without copying data.
     "
     slug="connector_x_arrow"
+    install_comment="with duckdb"
+    install_packages='"dlt[duckdb]"'
     run_file="" />
 
 ## Load mysql table with ConnectorX and Arrow

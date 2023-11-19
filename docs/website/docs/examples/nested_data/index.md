@@ -9,6 +9,8 @@ import Header from '../_examples-header.md';
 <Header
     intro="This example demonstrates how to control nested data using Python and the dlt library. It covers working with MongoDB, incremental loading, limiting nesting levels, and applying data type hints."
     slug="nested_data"
+    install_comment="with duckdb"
+    install_packages='"dlt[duckdb]"'
     run_file="nested_data" />
 
 ## Control nested data
@@ -62,13 +64,13 @@ def mongodb_collection(
     write_disposition: Optional[str] = dlt.config.value,
 ) -> Any:
     # set up mongo client
-    client = MongoClient(connection_url, uuidRepresentation="standard", tz_aware=True)
+    client: Any = MongoClient(connection_url, uuidRepresentation="standard", tz_aware=True)
     mongo_database = client.get_default_database() if not database else client[database]
     collection_obj = mongo_database[collection]
 
     def collection_documents(
-        client,
-        collection,
+        client: Any,
+        collection: Any,
         incremental: Optional[dlt.sources.incremental[Any]] = None,
     ) -> Iterator[TDataItem]:
         LoaderClass = CollectionLoader

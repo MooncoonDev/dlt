@@ -14,8 +14,8 @@ import CodeBlock from '@theme/CodeBlock';
 git clone git@github.com:dlt-hub/dlt.git
 # go to example directory
 cd ./dlt/docs/examples/${props.slug}
-# install dlt with duckdb
-pip install "dlt[duckdb]"
+# install dlt ${props.install_comment}
+pip install ${props.install_packages}
 # run the example script
 python ${props.run_file}.py`}
 </CodeBlock>

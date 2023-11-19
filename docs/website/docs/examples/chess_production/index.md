@@ -9,6 +9,8 @@ import Header from '../_examples-header.md';
 <Header
     intro="In this tutorial, you will learn how to investigate, track, retry and test your loads."
     slug="chess_production"
+    install_comment="with duckdb"
+    install_packages='"dlt[duckdb]"'
     run_file="chess" />
 
 ## Run chess pipeline in production
