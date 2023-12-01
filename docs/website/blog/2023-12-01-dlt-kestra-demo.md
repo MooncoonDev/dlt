@@ -9,6 +9,9 @@ authors:
     image_url: https://avatars.githubusercontent.com/u/88698977?s=96&v=4
 tags: [Kestra, Automation, dlt, Orchestration, Slack, BigQuery, OpenAI]
 ---
+<head>
+    <link rel="canonical" href="https://dlthub.com/docs/blog/dlt-kestra-demo-blog" />
+</head>
 ---
 ## THE PROBLEM
 
