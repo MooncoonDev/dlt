@@ -69,7 +69,7 @@ def fsspec_filesystem(
 def fsspec_from_config(config: FilesystemConfiguration) -> Tuple[AbstractFileSystem, str]:
     """Instantiates an authenticated fsspec `FileSystem` from `config` argument.
 
-    Authenticates following filesystems:
+    Authenticates the following filesystems:
     * s3
     * az, abfs
     * gcs, gs
